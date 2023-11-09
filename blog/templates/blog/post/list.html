@@ -13,6 +13,8 @@
     <p class="date fst-italic text-secondary">
         Published {{ post.publish }} by {{ post.author }}
     </p>
-    {{ post.body|truncatewords:30|linebreaks }}
+    <div class="border-bottom">
+        {{ post.body|truncatewords:30|linebreaks }}
+    </div>
     {% endfor %}
 {% endblock content %}
